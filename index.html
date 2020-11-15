@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="root">
+      <div class="result">
+        <input id="calcResult" placeholder="0" disabled/>
+      </div>
+    <div class="allrow">
+      
+      <div class="row">
+        <button onclick="clearAll('C')" class="button" >C</button>
+        <button onclick="addNumbers('(')" class="button">(</button>
+        <button onclick="addNumbers(')')" class="button">)</button>
+        <button onclick="addNumbers('.')" class="button">.</button>
+      </div>
+      
+      <div class="row">
+        <button onclick="addNumbers('**')" class="button">**</button>
+        <button onclick="mathsqrt()" class="button">√</button>
+        <button onclick="addNumbers('/')" class="button">/</button>
+        <button onclick="addNumbers('*')" class="button">*</button>
+      </div>
+      
+      <div class="row">
+      <button onclick="addNumbers(7)" class="button">7</button>
+      <button onclick="addNumbers(8)" class="button">8</button>
+      <button onclick="addNumbers(9)" class="button">9</button>
+      <button onclick="addNumbers('-')" class="button">-</button>
+    </div>
+
+    <div class="row">
+      <button onclick="addNumbers(4)" class="button">4</button>
+      <button onclick="addNumbers(5)" class="button">5</button>
+      <button onclick="addNumbers(6)" class="button">6</button>
+      <button onclick="addNumbers('+')" class="button">+</button>
+    </div>
+      
+    <div class="row">
+      <button onclick="addNumbers(1)" class="button">1</button>
+      <button onclick="addNumbers(2)" class="button">2</button>
+      <button onclick="addNumbers(3)" class="button">3</button>
+      <button onclick="addNumbers(0)" class="button num">0</button>
+    </div>
+      
+    <div class="row">
+      <button onclick="result()" class="button" style="padding:12px 126px 12px 116px;">=</button>
+    </div>
+      
+   <script src="myscripts.js"></script>      
+  </body>
+</html>
